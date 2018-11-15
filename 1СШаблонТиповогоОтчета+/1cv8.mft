@@ -1,0 +1,11 @@
+﻿Vendor=Фирма "1С"
+Name=УниверсальныйОтчет
+Version=1.0.1.28
+[Config1]
+Catalog=1C:Универсальный отчет/Универсальный отчет
+Destination=1C\TReport
+Source=1cv8.cf
+[Config2]
+Catalog=1C:Универсальный отчет/Универсальный отчет (демо)
+Destination=1C\DemoTReport
+Source=1Cv8.dt

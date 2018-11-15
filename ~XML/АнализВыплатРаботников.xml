@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>Период</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Физлицо</field>
+		</item>
+	</selection>
+	<filter>
+		<item xsi:type="FilterItemComparison">
+			<left xsi:type="dcscor:Field">Физлицо</left>
+			<comparisonType>Equal</comparisonType>
+			<right xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config" xsi:type="d4p1:CatalogRef.ФизическиеЛица">55669d6b-4cfa-11e7-80de-000c29ce151b</right>
+		</item>
+	</filter>
+	<dataParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>Периодичность</dcscor:parameter>
+			<dcscor:value xsi:type="xs:string">Месяц</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>Период</dcscor:parameter>
+			<dcscor:value xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>2016-07-01T00:00:00</v8:startDate>
+				<v8:endDate>2018-09-21T23:59:59</v8:endDate>
+			</dcscor:value>
+		</dcscor:item>
+	</dataParameters>
+	<outputParameters/>
+	<item xsi:type="StructureItemGroup">
+		<use>false</use>
+		<groupItems>
+			<item xsi:type="GroupItemField">
+				<field>Физлицо</field>
+				<groupType>Items</groupType>
+				<periodAdditionType>None</periodAdditionType>
+				<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+				<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+			</item>
+		</groupItems>
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+		<outputParameters/>
+		<item xsi:type="StructureItemGroup">
+			<groupItems>
+				<item xsi:type="GroupItemField">
+					<field>Период</field>
+					<groupType>Items</groupType>
+					<periodAdditionType>None</periodAdditionType>
+					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+				</item>
+			</groupItems>
+			<order>
+				<item xsi:type="OrderItemAuto"/>
+			</order>
+			<selection>
+				<item xsi:type="SelectedItemAuto"/>
+				<item xsi:type="SelectedItemField">
+					<field>СуммаУпрНачальныйОстаток</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>СуммаУпрРасход</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>СуммаУпрПриход</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>СуммаУпрКонечныйОстаток</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>Период</field>
+				</item>
+			</selection>
+			<outputParameters/>
+			<item xsi:type="StructureItemGroup">
+				<use>false</use>
+				<order>
+					<item xsi:type="OrderItemAuto"/>
+				</order>
+				<selection>
+					<item xsi:type="SelectedItemAuto"/>
+					<item xsi:type="SelectedItemField">
+						<field>СуммаУпрНачальныйОстаток</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>СуммаУпрПриход</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>СуммаУпрРасход</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>СуммаУпрКонечныйОстаток</field>
+					</item>
+				</selection>
+				<outputParameters/>
+			</item>
+			<item xsi:type="StructureItemGroup">
+				<order>
+					<item xsi:type="OrderItemAuto"/>
+				</order>
+				<selection>
+					<item xsi:type="SelectedItemAuto"/>
+					<item xsi:type="SelectedItemField">
+						<field>СуммаУпрНачальныйОстаток</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>СуммаУпрПриход</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>СуммаУпрРасход</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>СуммаУпрКонечныйОстаток</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>Период</field>
+					</item>
+				</selection>
+				<outputParameters/>
+			</item>
+		</item>
+	</item>
+	<item xsi:type="StructureItemTable">
+		<column>
+			<groupItems>
+				<item xsi:type="GroupItemField">
+					<field>Физлицо</field>
+					<groupType>Items</groupType>
+					<periodAdditionType>None</periodAdditionType>
+					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+				</item>
+			</groupItems>
+			<order>
+				<item xsi:type="OrderItemAuto"/>
+			</order>
+			<selection>
+				<item xsi:type="SelectedItemAuto"/>
+				<item xsi:type="SelectedItemField">
+					<field>Физлицо</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>СуммаУпрПриход</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>СуммаУпрРасход</field>
+				</item>
+			</selection>
+			<outputParameters/>
+		</column>
+		<row>
+			<groupItems>
+				<item xsi:type="GroupItemField">
+					<field>Период</field>
+					<groupType>Items</groupType>
+					<periodAdditionType>None</periodAdditionType>
+					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+				</item>
+			</groupItems>
+			<order>
+				<item xsi:type="OrderItemAuto"/>
+			</order>
+			<selection>
+				<item xsi:type="SelectedItemAuto"/>
+				<item xsi:type="SelectedItemField">
+					<field>Период</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>СуммаУпрПриход</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>СуммаУпрРасход</field>
+				</item>
+			</selection>
+			<outputParameters/>
+		</row>
+		<outputParameters/>
+	</item>
+</Settings>
