@@ -34,4 +34,14 @@ f76cb1e4-52fb-4e1e-a961-3a93ae750d92
 {4,"_$Data$_.New",15},
 {5,c2eafe89-a79b-4325-a759-b904626ee4a3,"Справочник.Пользователи",2},
 {3,"1CV8",4},
-{4,"_$InfoBase$_.DBConfigUpdateError",16}
+{4,"_$InfoBase$_.DBConfigUpdateError",16},
+{4,"_$InfoBase$_.ConfigExtensionUpdate",17},
+{4,"_$InfoBase$_.DBConfigExtensionUpdate",18},
+{4,"_$User$_.NewError",19},
+{4,"_$User$_.New",20},
+{4,"_$User$_.Update",21},
+{4,"_$Session$_.AuthenticationError",22},
+{1,08315c69-6a93-4b59-bba9-72db29f84b05,"Admin",2},
+{11,
+{0},2},
+{13,1,2}
